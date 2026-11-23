@@ -1,0 +1,16 @@
+{
+  "file": "cat-pfp-v5_connector-grade_2000.jpg",
+  "size": [
+    2000,
+    2000
+  ],
+  "mean_brightness": 76.1,
+  "centre_brightness": 119.6,
+  "mean_saturation": 168.9,
+  "clipped_white_pct": 0.05,
+  "crushed_black_pct": 0.1,
+  "sharpness_full": 26.5,
+  "sharpness_centre": 32.7,
+  "fail": [],
+  "warn": []
+}

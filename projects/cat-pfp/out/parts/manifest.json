@@ -1,0 +1,156 @@
+{
+  "doc": "cat-pfp.ai",
+  "character_layer": "Cat",
+  "layers": [
+    {
+      "path": "Background/Sky",
+      "file": "01-background-sky.png",
+      "bbox": [
+        0,
+        0,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Stars",
+      "file": "02-background-stars.png",
+      "bbox": [
+        24,
+        27,
+        1960,
+        1145
+      ]
+    },
+    {
+      "path": "Background/Sparkles",
+      "file": "03-background-sparkles.png",
+      "bbox": [
+        100,
+        64,
+        1924,
+        998
+      ]
+    },
+    {
+      "path": "Background/Meteors",
+      "file": "04-background-meteors.png",
+      "bbox": [
+        1322,
+        29,
+        1884,
+        338
+      ]
+    },
+    {
+      "path": "Background/Moon",
+      "file": "05-background-moon.png",
+      "bbox": [
+        459,
+        200,
+        1640,
+        1380
+      ]
+    },
+    {
+      "path": "Background/Clouds",
+      "file": "06-background-clouds.png",
+      "bbox": [
+        0,
+        251,
+        2000,
+        1069
+      ]
+    },
+    {
+      "path": "Background/Mountains",
+      "file": "07-background-mountains.png",
+      "bbox": [
+        0,
+        1090,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Cat/Body",
+      "file": "08-cat-body.png",
+      "bbox": [
+        33,
+        1158,
+        1597,
+        1935
+      ]
+    },
+    {
+      "path": "Cat/Head",
+      "file": "09-cat-head.png",
+      "bbox": [
+        676,
+        610,
+        1496,
+        1335
+      ]
+    },
+    {
+      "path": "Cat/Ears",
+      "file": "10-cat-ears.png",
+      "bbox": [
+        576,
+        443,
+        1329,
+        915
+      ]
+    },
+    {
+      "path": "Cat/Nose & mouth",
+      "file": "11-cat-nose-mouth.png",
+      "bbox": [
+        870,
+        1010,
+        1350,
+        1310
+      ]
+    },
+    {
+      "path": "Cat/Eyes",
+      "file": "12-cat-eyes.png",
+      "bbox": [
+        898,
+        822,
+        1303,
+        1021
+      ]
+    },
+    {
+      "path": "Foreground",
+      "file": "13-foreground.png",
+      "bbox": [
+        0,
+        1449,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Fireflies",
+      "file": "14-fireflies.png",
+      "bbox": [
+        55,
+        1178,
+        1942,
+        1924
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    2000
+  ],
+  "check": {
+    "max_channel_diff": 64,
+    "pixels_off_by_more_than_24_pct": 0.005,
+    "empty_layers": []
+  },
+  "pass": true
+}

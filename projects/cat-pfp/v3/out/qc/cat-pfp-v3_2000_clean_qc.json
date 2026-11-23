@@ -1,0 +1,16 @@
+{
+  "file": "C:\\Users\\salik\\Documents\\Adobe-Work\\cat-pfp\\v3\\out\\cat-pfp-v3_2000_clean.jpg",
+  "size": [
+    2000,
+    2000
+  ],
+  "mean_brightness": 79.8,
+  "centre_brightness": 134.9,
+  "mean_saturation": 163.3,
+  "clipped_white_pct": 0.04,
+  "crushed_black_pct": 0.0,
+  "sharpness_full": 19.0,
+  "sharpness_centre": 31.5,
+  "fail": [],
+  "warn": []
+}

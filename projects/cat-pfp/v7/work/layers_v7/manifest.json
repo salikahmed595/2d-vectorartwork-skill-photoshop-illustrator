@@ -1,0 +1,229 @@
+{
+  "doc": "cat-pfp-v7.ai",
+  "layers": [
+    {
+      "path": "Background art/Sky",
+      "file": "01-background-art-sky.png",
+      "bbox": [
+        0,
+        0,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background art/Stars",
+      "file": "02-background-art-stars.png",
+      "bbox": [
+        24,
+        12,
+        1988,
+        1149
+      ]
+    },
+    {
+      "path": "Background art/Moon",
+      "file": "03-background-art-moon.png",
+      "bbox": [
+        1275,
+        0,
+        2000,
+        775
+      ]
+    },
+    {
+      "path": "Background art/Far castle",
+      "file": "04-background-art-far-castle.png",
+      "bbox": [
+        0,
+        712,
+        2000,
+        1500
+      ]
+    },
+    {
+      "path": "Background art/Mist",
+      "file": "05-background-art-mist.png",
+      "bbox": [
+        0,
+        1360,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background art/Mid trees",
+      "file": "06-background-art-mid-trees.png",
+      "bbox": [
+        0,
+        1147,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Magic/Rune circle",
+      "file": "07-magic-rune-circle.png",
+      "bbox": [
+        336,
+        96,
+        1664,
+        1424
+      ]
+    },
+    {
+      "path": "Cat/Cowl",
+      "file": "08-cat-cowl.png",
+      "bbox": [
+        518,
+        871,
+        1482,
+        1272
+      ]
+    },
+    {
+      "path": "Cat/Chest fluff",
+      "file": "09-cat-chest-fluff.png",
+      "bbox": [
+        784,
+        973,
+        1216,
+        1216
+      ]
+    },
+    {
+      "path": "Cat/Cloak",
+      "file": "10-cat-cloak.png",
+      "bbox": [
+        280,
+        1013,
+        1720,
+        2000
+      ]
+    },
+    {
+      "path": "Cat/Upper arm",
+      "file": "11-cat-upper-arm.png",
+      "bbox": [
+        866,
+        1665,
+        1033,
+        1957
+      ]
+    },
+    {
+      "path": "Cat/Cloak trim",
+      "file": "12-cat-cloak-trim.png",
+      "bbox": [
+        802,
+        1000,
+        1198,
+        2000
+      ]
+    },
+    {
+      "path": "Cat/Amulet",
+      "file": "13-cat-amulet.png",
+      "bbox": [
+        766,
+        988,
+        1234,
+        1460
+      ]
+    },
+    {
+      "path": "Cat/Neck ruff",
+      "file": "14-cat-neck-ruff.png",
+      "bbox": [
+        736,
+        967,
+        1272,
+        1162
+      ]
+    },
+    {
+      "path": "Cat/Paw & orb",
+      "file": "15-cat-paw-orb.png",
+      "bbox": [
+        440,
+        1210,
+        1090,
+        2000
+      ]
+    },
+    {
+      "path": "Cat/Ears",
+      "file": "16-cat-ears.png",
+      "bbox": [
+        619,
+        230,
+        1327,
+        683
+      ]
+    },
+    {
+      "path": "Cat/Head",
+      "file": "17-cat-head.png",
+      "bbox": [
+        554,
+        406,
+        1447,
+        1083
+      ]
+    },
+    {
+      "path": "Cat/Eyes",
+      "file": "18-cat-eyes.png",
+      "bbox": [
+        690,
+        634,
+        1272,
+        813
+      ]
+    },
+    {
+      "path": "Cat/Nose & mouth",
+      "file": "19-cat-nose-mouth.png",
+      "bbox": [
+        948,
+        849,
+        1052,
+        952
+      ]
+    },
+    {
+      "path": "Cat/Whiskers",
+      "file": "20-cat-whiskers.png",
+      "bbox": [
+        430,
+        553,
+        1571,
+        1148
+      ]
+    },
+    {
+      "path": "Near frame/Wisteria",
+      "file": "21-near-frame-wisteria.png",
+      "bbox": [
+        0,
+        21,
+        2000,
+        570
+      ]
+    },
+    {
+      "path": "FX/Particles",
+      "file": "22-fx-particles.png",
+      "bbox": [
+        57,
+        87,
+        1953,
+        2000
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    2000
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "backend": "diffusers SD1.5 local",
+  "model": "Lykon/dreamshaper-8",
+  "mode": "img2img",
+  "init": "C:/Users/salik/Documents/Adobe-Work/cat-pfp/v2/work/bg-init.png",
+  "prompt": "anime background art, digital painting, fantasy night landscape, huge glowing teal full moon in the centre of the sky, starry sky, shooting stars, wispy indigo clouds, purple misty mountains, glowing lake, dark grassy foreground with rocks, violet and teal palette, painterly, highly detailed, masterpiece, best quality, scenery, no humans",
+  "negative": "text, watermark, signature, logo, jpeg artifacts, lowres, blurry, 3d render, photo, flat lighting, washed out colours, people, person, animal, cat, building",
+  "seed": 11,
+  "strength": 0.55,
+  "steps": 30,
+  "guidance": 7.0,
+  "size": 768,
+  "scheduler": "DPM++ 2M Karras",
+  "seconds": 268.0
+}

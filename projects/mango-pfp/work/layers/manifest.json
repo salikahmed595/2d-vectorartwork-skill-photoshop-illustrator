@@ -1,0 +1,279 @@
+{
+  "doc": "mango-pfp.ai",
+  "layers": [
+    {
+      "path": "Background/Sky",
+      "file": "01-background-sky.png",
+      "bbox": [
+        0,
+        0,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Sun",
+      "file": "02-background-sun.png",
+      "bbox": [
+        72,
+        0,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Clouds",
+      "file": "03-background-clouds.png",
+      "bbox": [
+        0,
+        280,
+        1991,
+        814
+      ]
+    },
+    {
+      "path": "Background/Far jungle",
+      "file": "04-background-far-jungle.png",
+      "bbox": [
+        0,
+        758,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Mist",
+      "file": "05-background-mist.png",
+      "bbox": [
+        0,
+        1145,
+        2000,
+        1430
+      ]
+    },
+    {
+      "path": "Background/Mid jungle",
+      "file": "06-background-mid-jungle.png",
+      "bbox": [
+        0,
+        1132,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Tall trees",
+      "file": "07-background-tall-trees.png",
+      "bbox": [
+        0,
+        0,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Background/Vines back",
+      "file": "08-background-vines-back.png",
+      "bbox": [
+        149,
+        119,
+        1851,
+        1050
+      ]
+    },
+    {
+      "path": "Background/Canopy",
+      "file": "09-background-canopy.png",
+      "bbox": [
+        0,
+        0,
+        2000,
+        416
+      ]
+    },
+    {
+      "path": "Scene/Ground",
+      "file": "10-scene-ground.png",
+      "bbox": [
+        0,
+        1610,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Scene/Ground plants",
+      "file": "11-scene-ground-plants.png",
+      "bbox": [
+        35,
+        1522,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "Mango/Cape",
+      "file": "12-mango-cape.png",
+      "bbox": [
+        171,
+        1174,
+        1445,
+        1566
+      ]
+    },
+    {
+      "path": "Mango/Log",
+      "file": "13-mango-log.png",
+      "bbox": [
+        530,
+        1414,
+        1470,
+        1738
+      ]
+    },
+    {
+      "path": "Mango/Contact shadows",
+      "file": "14-mango-contact-shadows.png",
+      "bbox": [
+        783,
+        1510,
+        1228,
+        1554
+      ]
+    },
+    {
+      "path": "Mango/Feet",
+      "file": "15-mango-feet.png",
+      "bbox": [
+        792,
+        1448,
+        1223,
+        1554
+      ]
+    },
+    {
+      "path": "Mango/Body",
+      "file": "16-mango-body.png",
+      "bbox": [
+        676,
+        586,
+        1407,
+        1488
+      ]
+    },
+    {
+      "path": "Mango/Leaves",
+      "file": "17-mango-leaves.png",
+      "bbox": [
+        814,
+        327,
+        1518,
+        612
+      ]
+    },
+    {
+      "path": "Mango/Mouth & blush",
+      "file": "18-mango-mouth-blush.png",
+      "bbox": [
+        765,
+        1154,
+        1286,
+        1250
+      ]
+    },
+    {
+      "path": "Mango/Eyes",
+      "file": "19-mango-eyes.png",
+      "bbox": [
+        851,
+        1024,
+        1230,
+        1202
+      ]
+    },
+    {
+      "path": "Mango/Brows",
+      "file": "20-mango-brows.png",
+      "bbox": [
+        861,
+        975,
+        1213,
+        1063
+      ]
+    },
+    {
+      "path": "Mango/Arms",
+      "file": "21-mango-arms.png",
+      "bbox": [
+        661,
+        1221,
+        1383,
+        1448
+      ]
+    },
+    {
+      "path": "Mango/Controller",
+      "file": "22-mango-controller.png",
+      "bbox": [
+        814,
+        1320,
+        1214,
+        1479
+      ]
+    },
+    {
+      "path": "Mango/Hands",
+      "file": "23-mango-hands.png",
+      "bbox": [
+        773,
+        1361,
+        1244,
+        1480
+      ]
+    },
+    {
+      "path": "Mango/Cape collar",
+      "file": "24-mango-cape-collar.png",
+      "bbox": [
+        627,
+        1191,
+        1415,
+        1408
+      ]
+    },
+    {
+      "path": "Foreground/Vines front",
+      "file": "25-foreground-vines-front.png",
+      "bbox": [
+        82,
+        59,
+        1948,
+        1330
+      ]
+    },
+    {
+      "path": "Foreground/Leaves",
+      "file": "26-foreground-leaves.png",
+      "bbox": [
+        0,
+        1658,
+        2000,
+        2000
+      ]
+    },
+    {
+      "path": "FX/Particles",
+      "file": "27-fx-particles.png",
+      "bbox": [
+        136,
+        302,
+        1991,
+        1599
+      ]
+    }
+  ],
+  "size": [
+    2000,
+    2000
+  ]
+}

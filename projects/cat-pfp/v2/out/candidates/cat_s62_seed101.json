@@ -1,0 +1,15 @@
+{
+  "backend": "diffusers SD1.5 local",
+  "model": "Lykon/dreamshaper-8",
+  "mode": "img2img",
+  "init": "C:/Users/salik/Documents/Adobe-Work/cat-pfp/v2/work/cat-init.png",
+  "prompt": "anime illustration, digital painting, cel shading with soft gradients, cute orange tabby cat, bust portrait, head tilted, looking at viewer, large bright green eyes, detailed fluffy fur, tabby stripes, pink nose, white chin, cyan rim light from behind, moonlit night, clean lineart, highly detailed, masterpiece, best quality, plain dark blue background",
+  "negative": "text, watermark, signature, logo, jpeg artifacts, lowres, blurry, bad anatomy, extra limbs, extra ears, extra eyes, asymmetrical eyes, cross-eyed, deformed, cropped head, out of frame, 3d render, photo, realistic, flat lighting, washed out colours, human, person, collar, whiskers",
+  "seed": 101,
+  "strength": 0.62,
+  "steps": 30,
+  "guidance": 7.0,
+  "size": 768,
+  "scheduler": "DPM++ 2M Karras",
+  "seconds": 146.8
+}

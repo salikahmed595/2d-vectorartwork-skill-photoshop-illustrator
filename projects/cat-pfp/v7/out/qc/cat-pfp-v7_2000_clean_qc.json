@@ -1,0 +1,16 @@
+{
+  "file": "cat-pfp-v7_2000_clean.jpg",
+  "size": [
+    2000,
+    2000
+  ],
+  "mean_brightness": 78.4,
+  "centre_brightness": 124.1,
+  "mean_saturation": 154.9,
+  "clipped_white_pct": 0.04,
+  "crushed_black_pct": 0.3,
+  "sharpness_full": 28.0,
+  "sharpness_centre": 32.1,
+  "fail": [],
+  "warn": []
+}

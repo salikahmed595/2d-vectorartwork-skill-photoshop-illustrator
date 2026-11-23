@@ -1,0 +1,16 @@
+{
+  "file": "mango-pfp_2000.jpg",
+  "size": [
+    2000,
+    2000
+  ],
+  "mean_brightness": 88.6,
+  "centre_brightness": 152.3,
+  "mean_saturation": 132.5,
+  "clipped_white_pct": 0.11,
+  "crushed_black_pct": 0.0,
+  "sharpness_full": 29.7,
+  "sharpness_centre": 32.2,
+  "fail": [],
+  "warn": []
+}
