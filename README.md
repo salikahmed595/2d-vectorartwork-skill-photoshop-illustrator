@@ -23,6 +23,9 @@ skill/2d-vector-salik/          the installable skill
   examples/cat-mage-v7/         full source + audit sheets + report of the cat mage
 projects/mango-pfp/             the complete Mango project: ref, work files, layer PNGs, .ai, .svg, .psd, exports, QC
 projects/cat-pfp/               the complete cat project history, v1 -> v7 (see the note below)
+skill/2d-artwork-photoshop-illustrator/  the studio app's default skill (portfolio style DNA, scripts, examples)
+skill/2d-pfp/                   2D profile-picture skill (portfolio images in assets/portfolio/)
+skill/vtuber-master/            VTuber art + rig-ready layer specs (reference images in assets/)
 skill/2dvector-photoshop-illustrator-salik/   a second drawing skill (Photoshop + Illustrator)
 skill/hand-made/                the hand-made checklist used for "Job sheet only" jobs (written for people, not agents)
 studio-frontend/                the Lumora studio app (git submodule -> salikahmed595/designer-software)
@@ -63,9 +66,13 @@ in Photoshop and Illustrator and hands back layered `.psd` / `.ai` files. Full d
    ```
    Open http://localhost:5173. The Jobs screen says whether the agent is connected.
 
-**Not included yet:** the app's default skill `2d-artwork-photoshop-illustrator`, and `2d-pfp` / `vtuber-master`
-(they hold portfolio images). On a fresh computer, pick an installed skill as the default on the **Skills** screen,
-or add those skills to `~/.claude/skills/` yourself; a job that needs a missing skill is refused with a clear message.
+Every skill the app routes to by default is in `skill/`, so `install.ps1` is enough. A job that needs a skill
+that is not installed is refused with a clear message.
+
+**Local paths:** the repo copies use placeholders instead of one computer's folders: `<fonts-folder>` (where the
+title fonts live), `%USERPROFILE%\Documents\Adobe-Work\<job>\` (the work folder) and `<your-work-folder>` in the
+example JSX. After installing, edit `references/backends.md` in `2d-artwork-photoshop-illustrator` and `2d-pfp`
+(and the `--font` example in `2d-pfp/SKILL.md`) if your fonts are somewhere else.
 
 ## Use
 In Claude Code, open Illustrator and Photoshop, then:
