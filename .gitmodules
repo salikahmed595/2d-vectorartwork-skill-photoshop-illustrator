@@ -1,0 +1,3 @@
+[submodule "studio-frontend"]
+	path = studio-frontend
+	url = https://github.com/salikahmed595/designer-software.git

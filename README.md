@@ -23,7 +23,11 @@ skill/2d-vector-salik/          the installable skill
   examples/cat-mage-v7/         full source + audit sheets + report of the cat mage
 projects/mango-pfp/             the complete Mango project: ref, work files, layer PNGs, .ai, .svg, .psd, exports, QC
 projects/cat-pfp/               the complete cat project history, v1 -> v7 (see the note below)
-install.ps1                     copies the skill into ~/.claude/skills/2d-vector-salik
+skill/2dvector-photoshop-illustrator-salik/   a second drawing skill (Photoshop + Illustrator)
+skill/hand-made/                the hand-made checklist used for "Job sheet only" jobs (written for people, not agents)
+studio-frontend/                the Lumora studio app (git submodule -> salikahmed595/designer-software)
+.claude/launch.json             "studio-dev" preview config for the Claude desktop app
+install.ps1                     installs every folder in skill/ that has a SKILL.md into ~/.claude/skills/<name>
 ```
 
 ## Requirements
@@ -34,11 +38,34 @@ install.ps1                     copies the skill into ~/.claude/skills/2d-vector
 
 ## Install
 ```powershell
-git clone https://github.com/salikahmed595/2d-vectorartwork-skill-photoshop-illustrator.git
+git clone --recursive https://github.com/salikahmed595/2d-vectorartwork-skill-photoshop-illustrator.git
 cd 2d-vectorartwork-skill-photoshop-illustrator
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
+`--recursive` also fetches the studio app (`studio-frontend/`). If you already cloned without it, run
+`git submodule update --init`. The installer copies every skill in `skill/` into `~/.claude/skills/`; an existing
+copy is moved to `~/.claude/skill-backups/<name>-<time>` first, never overwritten.
 Restart Claude Code. The skill shows up as `/2d-vector-salik`.
+
+## Studio platform (Lumora)
+The studio app lets a designer pick an artwork type, write the brief and send it; a Claude Code agent then draws it
+in Photoshop and Illustrator and hands back layered `.psd` / `.ai` files. Full details: `studio-frontend/README.md`.
+
+1. Install the skills (above).
+2. Install the Claude Code CLI and sign in: `irm https://claude.ai/install.ps1 | iex`, then run `claude` once.
+3. Make the `photoshop` and `illustrator` MCP servers available to Claude Code (the cli-anything bridges), with the
+   job folder inside their allowed folders. Check with `claude mcp list`.
+4. Start the app:
+   ```powershell
+   cd studio-frontend
+   npm install
+   npm run dev
+   ```
+   Open http://localhost:5173. The Jobs screen says whether the agent is connected.
+
+**Not included yet:** the app's default skill `2d-artwork-photoshop-illustrator`, and `2d-pfp` / `vtuber-master`
+(they hold portfolio images). On a fresh computer, pick an installed skill as the default on the **Skills** screen,
+or add those skills to `~/.claude/skills/` yourself; a job that needs a missing skill is refused with a clear message.
 
 ## Use
 In Claude Code, open Illustrator and Photoshop, then:
