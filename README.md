@@ -29,15 +29,19 @@ skill/vtuber-master/            VTuber art + rig-ready layer specs (reference im
 skill/2dvector-photoshop-illustrator-salik/   a second drawing skill (Photoshop + Illustrator)
 skill/hand-made/                the hand-made checklist used for "Job sheet only" jobs (written for people, not agents)
 studio-frontend/                the Lumora studio app (git submodule -> salikahmed595/designer-software)
+adobe-connector/                the Photoshop + Illustrator connector: cli-anything-photoshop / cli-anything-illustrator
+                                (CLIs + MCP servers that run JSX in the real apps; Photoshop 2023 + Illustrator 2022 only)
 .claude/launch.json             "studio-dev" preview config for the Claude desktop app
-install.ps1                     installs every folder in skill/ that has a SKILL.md into ~/.claude/skills/<name>
+install.ps1                     installs the skills, the connector and its MCP servers (see Install)
 ```
 
 ## Requirements
-- Windows with **Adobe Illustrator** and **Adobe Photoshop** (tested with Illustrator 28.7 and Photoshop 25.12).
-- **Claude Code** (CLI or desktop app).
-- The `cli-anything-illustrator` and `cli-anything-photoshop` command-line bridges on PATH (they run JSX in the open apps).
-- **Python 3.10+** with **Pillow** (`pip install pillow`). Pillow is only used for resizing, contact sheets and checks, never to draw.
+- Windows with **Adobe Photoshop 2023** (v24, COM `Photoshop.Application.170`) and **Adobe Illustrator 2022**
+  (v26, COM `Illustrator.Application.26`), each opened once. **Only these versions are used**: the connector never opens
+  another version (a newer install such as 2027 can ask for a licence key), and the installer stops if one is missing.
+- **Claude Code** CLI (`irm https://claude.ai/install.ps1 | iex`, then run `claude` once to sign in).
+- **Python 3.10+** (python.org installer, or the `py` launcher). The installer makes its own venv for the connector.
+  The drawing skills also use **Pillow** (`pip install pillow`) for resizing, contact sheets and checks, never to draw.
 
 ## Install
 ```powershell
@@ -46,19 +50,30 @@ cd 2d-vectorartwork-skill-photoshop-illustrator
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 `--recursive` also fetches the studio app (`studio-frontend/`). If you already cloned without it, run
-`git submodule update --init`. The installer copies every skill in `skill/` into `~/.claude/skills/`; an existing
-copy is moved to `~/.claude/skill-backups/<name>-<time>` first, never overwritten.
-Restart Claude Code. The skill shows up as `/2d-vector-salik`.
+`git submodule update --init`. The installer:
+1. copies every skill in `skill/` into `~/.claude/skills/` (an existing copy is moved to
+   `~/.claude/skill-backups/<name>-<time>` first, never overwritten);
+2. creates `adobe-connector\.venv` and installs `cli-anything-photoshop` and `cli-anything-illustrator` into it;
+3. runs `--json app check` for both. If Photoshop 2023 or Illustrator 2022 is missing it prints what to install
+   and stops (nothing else is registered);
+4. registers the `photoshop` and `illustrator` MCP servers with Claude Code
+   (`claude mcp add --scope user <name> -- <venv exe> mcp --allowed-root %USERPROFILE%`), skipping any that are
+   already registered. If the repo is outside your user folder (e.g. on `D:\`), the studio's job folder
+   `studio-frontend\production\jobs` is added as a second `--allowed-root`.
+
+It is safe to run again: the venv is reused and existing MCP registrations are left as they are.
+Check with `claude mcp list`, then restart Claude Code. The skill shows up as `/2d-vector-salik`.
+The connector only reads and writes files under those `--allowed-root` folders; details in `adobe-connector/README.md`.
 
 ## Studio platform (Lumora)
 The studio app lets a designer pick an artwork type, write the brief and send it; a Claude Code agent then draws it
 in Photoshop and Illustrator and hands back layered `.psd` / `.ai` files. Full details: `studio-frontend/README.md`.
 
-1. Install the skills (above).
-2. Install the Claude Code CLI and sign in: `irm https://claude.ai/install.ps1 | iex`, then run `claude` once.
-3. Make the `photoshop` and `illustrator` MCP servers available to Claude Code (the cli-anything bridges), with the
-   job folder inside their allowed folders. Check with `claude mcp list`.
-4. Start the app:
+1. Install the Claude Code CLI and sign in: `irm https://claude.ai/install.ps1 | iex`, then run `claude` once.
+2. Run `install.ps1` (above). It installs the skills and the connector and registers the `photoshop` and
+   `illustrator` MCP servers with the studio's job folder (`studio-frontend\production\jobs`) inside their allowed
+   folders. Check with `claude mcp list`.
+3. Start the app:
    ```powershell
    cd studio-frontend
    npm install
